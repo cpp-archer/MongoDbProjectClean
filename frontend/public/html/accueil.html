@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestionnaire de Tâches</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Gestionnaire de Tâches</h1>
+        </header>
+
+        <main class="home-content">
+            <div class="stats-section">
+                <h3>Statistiques</h3>
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <div class="stat-number" id="totalTasks">-</div>
+                        <div class="stat-label">Total</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number" id="completedTasks">-</div>
+                        <div class="stat-label">Terminées</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number" id="inProgressTasks">-</div>
+                        <div class="stat-label">En cours</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number" id="pendingTasks">-</div>
+                        <div class="stat-label">En attente</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="action-buttons">
+                <a href="/TasksList" class="btn btn-primary">Voir les tâches</a>
+                <a href="/createTask" class="btn btn-success">Nouvelle tâche</a>
+            </div>
+        </main>
+    </div>
+
+    <script src="/js/accueil.js"></script>
+</body>
+</html>
