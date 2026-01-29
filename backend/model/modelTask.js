@@ -1,20 +1,3 @@
-// const mongoose = require("mongoose");
-
-// const Task = mongoose.Schema("taches",{
-//     titre:String,
-//     description:String,
-//     dateCreation:Date,
-//     echeance:Date,
-//     statut:String,
-//     priorite:String,
-//     auteur: { String},
-//     categorie: String,
-//     etiquettes: [ String],
-//     'sous-taches': [Object],
-//     commentaires: [ Object ],
-//     historiqueModifications: [ Object ]
-// });
-
 const mongoose = require("mongoose");
 
 const TaskSchema = new mongoose.Schema({
@@ -44,7 +27,6 @@ const TaskSchema = new mongoose.Schema({
 
 const TaskModel = mongoose.model("Task", TaskSchema);
 
-// Export du modèle (ligne manquante)
 module.exports = TaskModel;
 
 
